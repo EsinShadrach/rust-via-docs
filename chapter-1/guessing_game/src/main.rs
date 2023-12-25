@@ -19,7 +19,9 @@ fn main() {
 
         if trials == 0 {
             break;
-        } else if trials == 1 {
+        }
+        // Since the program breaks here no need for an  `else if`
+        if trials == 1 {
             println!("You have one more tial left! Make it count!");
         }
 
@@ -29,6 +31,7 @@ fn main() {
 
         // Guess was re-assigned as an integer now
         let guess = match guess.trim().parse::<u32>() {
+            // Okay get's returned here
             Ok(num) => num,
             Err(_) => {
                 println!("Enter a valid `Number`!");
