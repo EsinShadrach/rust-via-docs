@@ -16,8 +16,13 @@ fn main(){
   - `cargo check` to check for errors when compiling
 
 - Variables
-    - Variables are immutable by default or else specified other wise by the `mut` keyword
-    ```rust
-    let mut a= "i am mutable";
-    let  a = "i am NOT mutable";
-    ```
+
+  - Variables are immutable by default or else specified other wise by the `mut` keyword
+
+  ```rust
+  let mut a= "i am mutable";
+  let  a = "i am NOT mutable";
+  ```
+
+- Types
+  - String is for dynamic string that could grow and the size i uknown
